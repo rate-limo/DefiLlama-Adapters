@@ -1,5 +1,5 @@
 // Rate (formerly Iter, before that Standard) - fully onchain CLOB exchange with band liquidity pools,
-// stop orders and a token launchpad. Contracts: https://github.com/iter-cx/iter-monorepo
+// stop orders and a token launchpad. Contracts: https://github.com/rate-limo/rate-monorepo
 //
 // Every chain needs the MatchingEngine; the other contracts are read when configured:
 //   stopOrderEngine  - StopOrderEngine, escrows stop orders in one StopLimitOrderbook per pair
@@ -9,21 +9,21 @@
 //                      through its orderbook (see usdPrices)
 const { nullAddress } = require('../helper/tokenMapping')
 
-// Addresses come from packages/deployments/deployments.json in iter-monorepo.
+// Addresses come from packages/deployments/deployments.json in rate-monorepo.
 const config = {
   arc_testnet: {
-    matchingEngine: '0xD44e3b8bdDC46E112C4eB99EdcF08FF88cf4b0Da',
-    stopOrderEngine: '0x0e7091a9cb0520DA70F947aF67afc3Cb12807341',
-    bandPoolFactory: '0x1844A8bCDcaa53B54a873220E4Ef7a4a53eF73E5',
-    presaleLaunch: '0x8aE955FB9C0F157da0a936EFcEc6803CD0710DbD',
+    matchingEngine: '0xeB2d3895D312C5d003D15e6b6b37B2211b201B3C',
+    stopOrderEngine: '0x428516cc93F25916d93683345ea62954F48C4576',
+    bandPoolFactory: '0x980F2dFDfFe2E3397d2D6Ba51D48eE67D8558642',
+    presaleLaunch: '0x67DAfE22AD5CB4b8f0bBb6B443E279862F74fDFc',
     // Arc's native USDC, read through its 6-decimal ERC-20 view.
     stablecoins: ['0x3600000000000000000000000000000000000000'],
   },
   rise_testnet: {
-    matchingEngine: '0x631eb12F60698C869a192217C0055CCb660ff9c1',
-    stopOrderEngine: '0xBCBFD284c037bdCf87c494b6Cd92029527b60e65',
-    bandPoolFactory: '0xA3b41c0F07533B3807E07A688556A6DD68799c8c',
-    presaleLaunch: '0xB337Cd9dA656d21364db0ee28529a24aFF2B5F74',
+    matchingEngine: '0xEBC3DD72a713aeC32688672613Ab2129d037c31A',
+    stopOrderEngine: '0x3f2BD4F0695bb42887BE7FB6326c74A9F9D1eF37',
+    bandPoolFactory: '0x2ADd89C671F79A44982274bBe629d8b0dD6A2a07',
+    presaleLaunch: '0xB5D9049D10DC1f8d752B2ad5b2ba420A49e27e28',
     // USDC and USDT from the Rate token list for RISE testnet.
     stablecoins: ['0x1f18a1724D8960f10165788dba3123F3f5623BB9', '0xB780aa7C36Abd888f81Be044569F4Bf7F2422e07'],
   },
