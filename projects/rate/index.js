@@ -1,4 +1,4 @@
-// Iter (formerly Standard) - fully onchain CLOB exchange with band liquidity pools,
+// Rate (formerly Iter, before that Standard) - fully onchain CLOB exchange with band liquidity pools,
 // stop orders and a token launchpad. Contracts: https://github.com/iter-cx/iter-monorepo
 //
 // Every chain needs the MatchingEngine; the other contracts are read when configured:
@@ -24,7 +24,7 @@ const config = {
     stopOrderEngine: '0xBCBFD284c037bdCf87c494b6Cd92029527b60e65',
     bandPoolFactory: '0xA3b41c0F07533B3807E07A688556A6DD68799c8c',
     presaleLaunch: '0xB337Cd9dA656d21364db0ee28529a24aFF2B5F74',
-    // USDC and USDT from the Iter token list for RISE testnet.
+    // USDC and USDT from the Rate token list for RISE testnet.
     stablecoins: ['0x1f18a1724D8960f10165788dba3123F3f5623BB9', '0xB780aa7C36Abd888f81Be044569F4Bf7F2422e07'],
   },
 }
